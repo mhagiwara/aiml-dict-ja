@@ -1,0 +1,80 @@
+# C
+
+- word: class
+  trans: クラス
+  kana: くらす
+  def: 分類問題において、データが属するグループ
+
+- word: classification
+  trans: 分類
+  kana: ぶんるい
+  def: データを複数のクラス（グループ）に仕分けること
+  ref:
+    - class
+
+- word: convex optimization
+  trans: 凸最適化
+  kana: とつさいてきか
+  def: 凸関数の最適化
+  ref:
+    - optimization
+
+# G
+
+- word: gradient
+  trans: 勾配
+  kana: こうばい
+  def: 関数の変化率を表すベクトル
+  ref:
+    - 勾配 (ベクトル解析): https://ja.wikipedia.org/wiki/%E5%8B%BE%E9%85%8D_(%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB%E8%A7%A3%E6%9E%90)
+
+
+# E
+
+- word: epoch
+  trans: エポック
+  kana: えぽっく
+  def: 学習アルゴリズムに対して、全ての訓練データを一通り与えるサイクル。一つの訓練データを、複数回繰り返して提示するのが普通である。
+
+
+# L
+
+- word: learning rate
+  trans: 学習率
+  kana: がくしゅうりつ
+  def: 勾配法において、どのぐらいパラメータを変化させるかを制御するハイパーパラメータ。勾配に対する係数。
+
+- word: loss
+  trans: 損失
+  kana: そんしつ
+  def: モデルの予測が、真のラベルからどのぐらい遠いかを表す量。コストとも呼ばれる。
+  ref:
+    - loss function
+  syn:
+    - cost
+
+- word: loss function
+  trans: 損失関数
+  kana: そんしつかんすう
+  def: モデルの予測と真のラベルが与えられた時、その両者がどのぐらい遠いかを表す量（損失）を返す関数。コスト関数とも呼ばれる。
+  ref:
+    - loss
+  syn:
+    - cost function
+
+# O
+
+- word: optimization
+  trans: 最適化
+  kana: さいてきか
+  def: 関数・プログラム・製造物などを最適な状態に近づけること。特に、関数の値が最小もしくは最大となる状態を求めること。
+  ref:
+    - 最適化問題: https://ja.wikipedia.org/wiki/%E6%9C%80%E9%81%A9%E5%8C%96%E5%95%8F%E9%A1%8C
+
+- word: overfitting
+  trans: 過学習; 過剰適合
+  kana: かがくしゅう; 過剰適合
+  def: モデルが訓練データには適合しているが、未知のデータに対しては汎化能力の低い状態
+  ref:
+    - 過剰適合: https://ja.wikipedia.org/wiki/%E9%81%8E%E5%89%B0%E9%81%A9%E5%90%88
+    - underfitting
