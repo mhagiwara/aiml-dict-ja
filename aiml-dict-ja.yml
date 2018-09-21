@@ -28,6 +28,14 @@
   ref:
     - 勾配 (ベクトル解析): https://ja.wikipedia.org/wiki/%E5%8B%BE%E9%85%8D_(%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB%E8%A7%A3%E6%9E%90)
 
+- word: gradient descent
+  trans: 勾配降下法; 最急降下法
+  kana: こうばいこうかほう; 最急降下法
+  def: 勾配を用いて関数の最小値を探索する最適化アルゴリズム。
+  ref:
+    - gradient
+    - 最急降下法: https://ja.wikipedia.org/wiki/%E6%9C%80%E6%80%A5%E9%99%8D%E4%B8%8B%E6%B3%95
+
 
 # E
 
@@ -37,12 +45,27 @@
   def: 学習アルゴリズムに対して、全ての訓練データを一通り与えるサイクル。一つの訓練データを、複数回繰り返して提示するのが普通である。
 
 
+# H
+
+- word: hyperparameter
+  trans: ハイパーパラメータ
+  kana: はいぱーぱらめーた
+  def: 機械学習アルゴリズムに関するパラメータ。学習されるモデルに関する通常のパラメータと対比してこう呼ばれる。
+
+
 # L
 
 - word: learning rate
   trans: 学習率
   kana: がくしゅうりつ
   def: 勾配法において、どのぐらいパラメータを変化させるかを制御するハイパーパラメータ。勾配に対する係数。
+
+- word: least squares method
+  trans: 最小二乗法
+  kana: さいしょうにじょうほう
+  def: 残差の二乗和を最小化するように最適化する方法
+  ref:
+    - 最小二乗法: https://ja.wikipedia.org/wiki/%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%97%E6%B3%95
 
 - word: loss
   trans: 損失
@@ -61,6 +84,28 @@
     - loss
   syn:
     - cost function
+
+
+# M
+
+- word: machine learning
+  trans: 機械学習
+  kana: きかいがくしゅう
+  def: 人間が自然に行っている学習能力と同様の機能をコンピュータで実現しようとする技術・手法
+  ref:
+    - 機械学習: https://ja.wikipedia.org/wiki/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92
+  syn:
+    - ML
+
+
+# N
+
+- word: neural networks
+  trans: ニューラル・ネットワーク
+  kana: にゅーらる・ねっとわーく
+  def: 神経回路網から着想を得た、ノード（節点）とエッジ（結合）からなる計算のためのモデル。ノード間の接続の強さを調整することにより学習する。
+  ref:
+    - ニューラルネットワーク: https://ja.wikipedia.org/wiki/%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A9%E3%83%AB%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF
 
 # O
 
