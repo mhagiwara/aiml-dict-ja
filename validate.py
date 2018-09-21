@@ -32,7 +32,6 @@ def main():
         print('%d entries found.' % len(data))
 
         for entry in data:
-            print(entry)
             validate_entry(entry)
 
         print('Validation: PASSED')
