@@ -19,6 +19,15 @@
   ref:
     - optimization
 
+- word: dropout
+  trans: ドロップアウト
+  kana: どろっぷあうと
+  def: ニューラル・ネットワークの訓練中に、ノードをランダムに欠損させる正則化テクニック。過学習を防ぐ効果がある。
+  ref:
+    - ドロップアウトに関するオリジナルの論文 (Srivastava et al. 2014): https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf
+    - regularization
+
+
 # G
 
 - word: gradient
@@ -26,7 +35,7 @@
   kana: こうばい
   def: 関数の変化率を表すベクトル
   ref:
-    - 勾配 (ベクトル解析): https://ja.wikipedia.org/wiki/%E5%8B%BE%E9%85%8D_(%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB%E8%A7%A3%E6%9E%90)
+    - 勾配 (Wikipedia): https://ja.wikipedia.org/wiki/%E5%8B%BE%E9%85%8D_(%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB%E8%A7%A3%E6%9E%90)
 
 - word: gradient descent
   trans: 勾配降下法; 最急降下法
@@ -34,7 +43,7 @@
   def: 勾配を用いて関数の最小値を探索する最適化アルゴリズム。
   ref:
     - gradient
-    - 最急降下法: https://ja.wikipedia.org/wiki/%E6%9C%80%E6%80%A5%E9%99%8D%E4%B8%8B%E6%B3%95
+    - 最急降下法 (Wikipedia): https://ja.wikipedia.org/wiki/%E6%9C%80%E6%80%A5%E9%99%8D%E4%B8%8B%E6%B3%95
 
 
 # E
@@ -65,7 +74,7 @@
   kana: さいしょうにじょうほう
   def: 残差の二乗和を最小化するように最適化する方法
   ref:
-    - 最小二乗法: https://ja.wikipedia.org/wiki/%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%97%E6%B3%95
+    - 最小二乗法 (Wikipedia): https://ja.wikipedia.org/wiki/%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%97%E6%B3%95
 
 - word: loss
   trans: 損失
@@ -93,7 +102,7 @@
   kana: きかいがくしゅう
   def: 人間が自然に行っている学習能力と同様の機能をコンピュータで実現しようとする技術・手法
   ref:
-    - 機械学習: https://ja.wikipedia.org/wiki/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92
+    - 機械学習 (Wikipedia): https://ja.wikipedia.org/wiki/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92
   syn:
     - ML
 
@@ -105,7 +114,7 @@
   kana: にゅーらる・ねっとわーく
   def: 神経回路網から着想を得た、ノード（節点）とエッジ（結合）からなる計算のためのモデル。ノード間の接続の強さを調整することにより学習する。
   ref:
-    - ニューラルネットワーク: https://ja.wikipedia.org/wiki/%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A9%E3%83%AB%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF
+    - ニューラルネットワーク (Wikipedia): https://ja.wikipedia.org/wiki/%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A9%E3%83%AB%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF
 
 # O
 
@@ -114,12 +123,23 @@
   kana: さいてきか
   def: 関数・プログラム・製造物などを最適な状態に近づけること。特に、関数の値が最小もしくは最大となる状態を求めること。
   ref:
-    - 最適化問題: https://ja.wikipedia.org/wiki/%E6%9C%80%E9%81%A9%E5%8C%96%E5%95%8F%E9%A1%8C
+    - 最適化問題 (Wikipedia): https://ja.wikipedia.org/wiki/%E6%9C%80%E9%81%A9%E5%8C%96%E5%95%8F%E9%A1%8C
 
 - word: overfitting
   trans: 過学習; 過剰適合
   kana: かがくしゅう; 過剰適合
   def: モデルが訓練データには適合しているが、未知のデータに対しては汎化能力の低い状態
   ref:
-    - 過剰適合: https://ja.wikipedia.org/wiki/%E9%81%8E%E5%89%B0%E9%81%A9%E5%90%88
+    - 過剰適合 (Wikipedia): https://ja.wikipedia.org/wiki/%E9%81%8E%E5%89%B0%E9%81%A9%E5%90%88
     - underfitting
+
+
+# R
+
+- word: regularization
+  trans: 正則化
+  kana: せいそくか
+  def: 機械学習において、過学習を防ぐために、モデルに何らかの追加の制約を導入する方法。
+  ref:
+    - 正則化 (Wikipedia): https://ja.wikipedia.org/wiki/%E6%AD%A3%E5%89%87%E5%8C%96
+    - dropout

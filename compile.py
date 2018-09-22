@@ -29,12 +29,15 @@ def get_ref_list(entry):
     return ref_list
 
 
-def create_entry_file(entry, env):
-    entry['ref_list'] = get_ref_list(entry)
+def create_entry_file(entry, env, prev_entry=None, next_entry=None):
+    page_data = dict(entry)  # shallow copy
+    page_data['ref_list'] = get_ref_list(entry)
+    page_data['prev_entry'] = prev_entry
+    page_data['next_entry'] = next_entry
 
     template = env.get_template('entry.html')
     with open(f'{TARGET_DIR}/{entry["url"]}', mode='w') as f:
-        f.write(template.render(**entry))
+        f.write(template.render(**page_data))
 
 
 def create_index_file(data, env):
@@ -54,8 +57,10 @@ def main():
 
         create_index_file(data, env)
 
-        for entry in data:
-            create_entry_file(entry, env)
+        for i, entry in enumerate(data):
+            prev_entry = data[i-1] if i > 0 else None
+            next_entry = data[i+1] if i < len(data) - 1 else None
+            create_entry_file(entry, env, prev_entry=prev_entry, next_entry=next_entry)
 
 
 if __name__ == '__main__':
