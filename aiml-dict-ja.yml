@@ -1,3 +1,21 @@
+# A
+
+- word: activation
+  trans: 活性化
+  kana: かっせいか
+  def: ニューラル・ネットワークのノード (節点) の出力値。しばし活性化関数 (activation function) と混同して使用される。
+  ref:
+    - activation function
+
+- word: activation function
+  trans: 活性化関数
+  kana: かっせいかかんすう
+  def: ニューラル・ネットワークにおいて、線形層の後に適用される非線形関数のこと。ReLU、シグモイド関数などがある。
+  ref:
+    - activation
+    - 活性化関数 (Wikipedia): https://ja.wikipedia.org/wiki/%E6%B4%BB%E6%80%A7%E5%8C%96%E9%96%A2%E6%95%B0
+
+
 # C
 
 - word: class
@@ -36,6 +54,7 @@
   def: 関数の変化率を表すベクトル
   ref:
     - 勾配 (Wikipedia): https://ja.wikipedia.org/wiki/%E5%8B%BE%E9%85%8D_(%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB%E8%A7%A3%E6%9E%90)
+    - stochastic gradient descent
 
 - word: gradient descent
   trans: 勾配降下法; 最急降下法
@@ -116,6 +135,7 @@
   ref:
     - ニューラルネットワーク (Wikipedia): https://ja.wikipedia.org/wiki/%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A9%E3%83%AB%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF
 
+
 # O
 
 - word: optimization
@@ -127,7 +147,7 @@
 
 - word: overfitting
   trans: 過学習; 過剰適合
-  kana: かがくしゅう; 過剰適合
+  kana: かがくしゅう; かじょうてきごう
   def: モデルが訓練データには適合しているが、未知のデータに対しては汎化能力の低い状態
   ref:
     - 過剰適合 (Wikipedia): https://ja.wikipedia.org/wiki/%E9%81%8E%E5%89%B0%E9%81%A9%E5%90%88
@@ -143,3 +163,33 @@
   ref:
     - 正則化 (Wikipedia): https://ja.wikipedia.org/wiki/%E6%AD%A3%E5%89%87%E5%8C%96
     - dropout
+
+- word: residual network
+  trans: 残差ネットワーク
+  kana: ざんさねっとわーく
+  def: |
+    畳み込み層をスキップし、入力信号をそのまま出力に足し合わせる「残差ブロック (residual network)」
+    を用いて構築されたニューラル・ネットワーク。非常に深い（層の数が多い）ニューラル・ネットワークを訓練できる。
+  ref:
+    - 残差ネットワークに関するオリジナルの論文 (He at al. 2015): https://arxiv.org/abs/1512.03385
+
+
+# S
+
+- word: stochastic gradient descent
+  trans: 確率的勾配降下法
+  kana: かくりつてきこうばいこうかほう
+  def: データの各インスタンスごとに勾配を計算し、関数の最小値を探索する勾配降下法の一つ。通常の勾配降下法のオンライン学習版とも言える。
+  ref:
+    - 確率的勾配降下法 (Wikipedia): https://ja.wikipedia.org/wiki/%E7%A2%BA%E7%8E%87%E7%9A%84%E5%8B%BE%E9%85%8D%E9%99%8D%E4%B8%8B%E6%B3%95
+    - gradient descent
+
+
+# U
+
+- word: underfitting
+  trans: 未学習
+  kana: みがくしゅう
+  def: モデルがデータの複雑さを捉えきれていなく、バイアスが高い状態。過学習の逆。
+  ref:
+    - overfitting

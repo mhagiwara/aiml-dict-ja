@@ -12,11 +12,11 @@
     </script>
 
     <meta charset="UTF-8">
-    <title>{{ word }} とは - AI (人工知能)・ML (機械学習) 用語辞典</title>
+    <title>{{ word }} とは - AI (人工知能)・ML (機械学習) 英日用語辞典</title>
 </head>
 <body>
     <h1>{{ word }}</h1>
-    <h2>{{ trans }} {{ kana }}</h2>
+    <h2>{{ trans }} ({{ kana }})</h2>
 
     <p>{{ def }}</p>
 
@@ -30,7 +30,7 @@
     {% endif %}
     <hr />
     <div style="float: left; width: 20%; text-align: center;"><a href="{{ prev_entry['url'] }}">{{ prev_entry['word'] }}</a></div>
-    <div style="float: left; width: 60%; text-align: center;"><a href="/">AI (人工知能)・ML (機械学習) 用語辞典</a></div>
+    <div style="float: left; width: 60%; text-align: center;"><a href="/">AI (人工知能)・ML (機械学習) 英日用語辞典</a></div>
     <div style="float: left; width: 20%; text-align: center;"><a href="{{ next_entry['url'] }}">{{ next_entry['word'] }}</a></div>
 </body>
 </html>

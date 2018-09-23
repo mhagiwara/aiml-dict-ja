@@ -1,4 +1,4 @@
-# AIML-dict-ja ― オープンソースの AI (人工知能)・ML (機械学習) 用語辞典
+# AIML-dict-ja ― オープンソースの AI (人工知能)・ML (機械学習) 英日用語辞典
 
 AIML-dict-ja は、オープンソースの人工知能・機械学習分野の英語→日本語用語辞典です。[クリエイティブ・コモンズ表示 - 継承 3.0 非移植 (CC BY-SA 3.0) ライセンス](https://creativecommons.org/licenses/by-sa/3.0/deed.ja) の下で利用できます。
 
