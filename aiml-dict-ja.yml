@@ -1,5 +1,25 @@
 # A
 
+- word: A/B testing
+  trans: AB テスト
+  kana: えーびー テスト
+  def: |
+    ２つ、もしくはそれ以上の手法を比較する統計的手法。既存の手法に対して新しい手法を比較することが多い。どちらの手法が良いかだけではなく、
+    差が統計的に有意かどうかを理解するのが目的である。通常は、１つの指標を用いて２つの手法を比べるが、複数の手法や指標を対象とすることもできる。
+  ref:
+    - A/B testing (Machine Learning Glossary): https://developers.google.com/machine-learning/glossary/
+
+- word: accuracy
+  trans: 精度
+  kana: せいど
+  def: |
+    分類において、正しく分類された予測の割合。複数クラス分類においては、精度は「正しい予測の数 ÷ 事例の総数」で求められる。
+    ２クラス分類においては、「（真陽性 + 真偽性）÷ 事例の総数」とも定義される。
+  ref:
+    - accuracy (Machine Learning Glossary): https://developers.google.com/machine-learning/glossary/
+    - true positive
+    - true negative
+
 - word: activation
   trans: 活性化
   kana: かっせいか
@@ -14,6 +34,8 @@
   ref:
     - activation
     - 活性化関数 (Wikipedia): https://ja.wikipedia.org/wiki/%E6%B4%BB%E6%80%A7%E5%8C%96%E9%96%A2%E6%95%B0
+    - ReLU
+    - sigmoid
 
 
 # C

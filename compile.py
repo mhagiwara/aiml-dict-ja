@@ -6,6 +6,8 @@ TARGET_DIR = 'web'
 
 
 def word_to_url(word):
+    word = word.lower()
+    word = word.replace('/', '')
     word = word.replace(' ', '-')
     return f'{word}.html'
 
